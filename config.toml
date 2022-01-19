@@ -3,7 +3,7 @@ languageCode = "zh-tw"
 title = "Yich的廢文百寶箱"
 theme = "mainroad"
 defaultContentLanguage = "zh-tw"
-
+  
 [Params]
   mainSections = ["post","主選單","側邊選單","讀書心得","技術研究","戶外運動","敗家開箱" ] # Specify section pages to show on home page and the "Recent articles" widget
   googleFontsLink = "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" # Load Google Fonts
@@ -28,3 +28,7 @@ defaultContentLanguage = "zh-tw"
   categories_counter = false # Enable counter for each category in "Categories" widget
   tags_counter = false # Enable counter for each tag in "Tags" widget
  
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  book = "books" # 佈景需要實作 Taxonomy Terms Template 的 layout，才能用book:["文學"] 這樣的方式分類文章
