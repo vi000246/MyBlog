@@ -1,7 +1,5 @@
-$curDir = Get-Location
-Get-ChildItem $PSScriptRoot | where{$_.Extension -eq ".bak"} |
-sort -Property LastWriteTime -Descending| Remove-Item -Include .bak
-
+# 把副檔名為.bak的檔清掉
+Get-ChildItem -Path (Get-Location).path -Include *.bak -File -Recurse | foreach { $_.Delete()}
 
 # Build the project.
 # 要將hugo.exe放在c槽底下
