@@ -2,10 +2,12 @@ baseURL = "http://vi000246.github.io/"
 languageCode = "zh-tw"
 title = "Yich的廢文百寶箱"
 theme = "mainroad"
-menu = ["main", "side", "footer"]
 defaultContentLanguage = "zh-tw"
+
 [Params]
-  mainSections = ["post","讀書心得","技術研究","戶外運動","敗家開箱" ] # Specify section pages to show on home page and the "Recent articles" widget
+  mainSections = ["post","about","讀書心得","技術研究","戶外運動","敗家開箱" ] # Specify section pages to show on home page and the "Recent articles" widget
+  googleFontsLink = "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" # Load Google Fonts
+  
 [Params.sidebar]
   home = "right" # Configure layout for home page
   list = "left"  # Configure layout for list pages
@@ -13,7 +15,24 @@ defaultContentLanguage = "zh-tw"
   # Enable widgets in given order
   widgets = ["search", "recent", "categories", "taglist", "social", "languages","sidemenu"]
 
+[Params.style.vars]
+  highlightColor = "#e22d30" # Override highlight color
+
+  # Override font-family sets. Secondary font-family set responsible for pre, code, kbd, and samp tags font
+  # Take care of different quotes OR escaping symbols in these params if necessary
+  fontFamilyPrimary = "'Open Sans', Helvetica, Arial, sans-serif"
+  fontFamilySecondary = "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+  
 [Params.widgets]
   recent_num = 5 # Set the number of articles in the "Recent articles" widget
   categories_counter = false # Enable counter for each category in "Categories" widget
   tags_counter = false # Enable counter for each tag in "Tags" widget
+ 
+#在主選單顯示about資料夾的內容，先註解掉 要用的話要在mainSections加上資料夾位置，點開才找得到文章
+#[menu]
+#[[menu.main]]
+#  identifier = 'about'
+#  name = 'about'
+#  pre = "<i class='fa fa-heart'></i>"
+#  url = '/about/'
+#  weight = -110
