@@ -4,3 +4,5 @@ public資料夾的remote url是vi000246.github.io，這個才是正式的github 
 theme是使用https://themes.gohugo.io/themes/mainroad/ 
 用submodule安裝在themes資料夾
 
+在windows的deploy方式:  
+點擊deploy_for_windows.bat檔，會自動執行腳本  

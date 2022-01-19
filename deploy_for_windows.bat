@@ -1,0 +1,1 @@
+Powershell.exe -executionpolicy remotesigned -File  .\deploy_for_windows.ps1

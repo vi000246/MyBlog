@@ -1,6 +1,11 @@
+$curDir = Get-Location
+Get-ChildItem $curDir | where{$_.Extension -eq ".bak"} |
+sort -Property LastWriteTime -Descending| Remove-Item -Include .bak
+
+
 # Build the project.
 # 要將hugo.exe放在c槽底下
-set-alias -name hugo C:\hugo
+set-alias -name hugo C:\hugo\hugo.exe
 
 hugo
 
