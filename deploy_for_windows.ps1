@@ -1,5 +1,5 @@
 $curDir = Get-Location
-Get-ChildItem $curDir | where{$_.Extension -eq ".bak"} |
+Get-ChildItem $PSScriptRoot | where{$_.Extension -eq ".bak"} |
 sort -Property LastWriteTime -Descending| Remove-Item -Include .bak
 
 

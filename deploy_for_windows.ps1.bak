@@ -1,4 +1,5 @@
-Get-ChildItem Get-Location | where{$_.Extension -eq ".bak"} |
+$curDir = Get-Location
+Get-ChildItem $curDir | where{$_.Extension -eq ".bak"} |
 sort -Property LastWriteTime -Descending| Remove-Item -Include .bak
 
 
