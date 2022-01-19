@@ -5,7 +5,7 @@ theme = "mainroad"
 defaultContentLanguage = "zh-tw"
 
 [Params]
-  mainSections = ["post","about","讀書心得","技術研究","戶外運動","敗家開箱" ] # Specify section pages to show on home page and the "Recent articles" widget
+  mainSections = ["post","主選單","側邊選單","讀書心得","技術研究","戶外運動","敗家開箱" ] # Specify section pages to show on home page and the "Recent articles" widget
   googleFontsLink = "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" # Load Google Fonts
   
 [Params.sidebar]
@@ -28,11 +28,3 @@ defaultContentLanguage = "zh-tw"
   categories_counter = false # Enable counter for each category in "Categories" widget
   tags_counter = false # Enable counter for each tag in "Tags" widget
  
-#在主選單顯示about資料夾的內容，先註解掉 要用的話要在mainSections加上資料夾位置，點開才找得到文章
-#[menu]
-#[[menu.main]]
-#  identifier = 'about'
-#  name = 'about'
-#  pre = "<i class='fa fa-heart'></i>"
-#  url = '/about/'
-#  weight = -110
