@@ -1,21 +1,14 @@
 baseURL = "http://vi000246.github.io/"
-languageCode = "en-us"
+languageCode = "zh-tw"
 title = "Yich的廢文百寶箱"
 theme = "mainroad"
 menu = ["main", "side", "footer"]
+defaultContentLanguage = "zh-tw"
 [Params]
-  description = "" # Site description. Used in meta description
-  copyright = "" # Footer copyright holder, otherwise will use site title
-  opengraph = true # Enable OpenGraph if true
-  schema = true # Enable Schema
-  readmore = false # Show "Read more" button in list if true
-  toc = true # Enable Table of Contents
-  pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
-  post_meta = ["author", "date", "categories", "translations"] # Order of post meta information
-  mainSections = ["post", "blog", "reading","program","shopping"] # Specify section pages to show on home page and the "Recent articles" widget
+  mainSections = ["post","讀書心得","技術研究","戶外運動","敗家開箱" ] # Specify section pages to show on home page and the "Recent articles" widget
 [Params.sidebar]
   home = "right" # Configure layout for home page
   list = "left"  # Configure layout for list pages
   single = false # Configure layout for single pages
   # Enable widgets in given order
-  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+  widgets = ["search", "recent", "categories", "taglist", "social", "languages","sidemenu"]
